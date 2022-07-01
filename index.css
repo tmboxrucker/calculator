@@ -1,0 +1,90 @@
+:root {
+    --primary-dark: #333;
+    --primary-light: #ededed;
+    --secondary-light: #fefefe;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary-light);
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-dark);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+input, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 10px;
+    border: #333 2px solid;
+}
+
+button:active {
+    transform: scale(90%);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    max-height: 600px;
+    border: #333 2px solid;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.topRow {
+    display: flex;
+    gap: 10px
+}
+
+.spacing {
+    flex: 1;
+}
+
+.delete {
+    flex: 6;
+}
+
+.clear {
+    flex: 6;
+}
+
+.power {
+    flex: 4;
+    max-width: 92.5px;
+}
+.display {
+    border: #333 2px solid;
+    border-radius: 10px;
+}
+
+.exponent {
+    position: relative;
+    bottom: 1ex;
+    font-size: 80%;
+}
+
+.footer {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
