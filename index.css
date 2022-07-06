@@ -9,6 +9,11 @@
     padding: 0%;
 }
 
+@font-face {
+    font-family: 'digital-font';
+    src: url(font/digital-7.ttf);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -28,9 +33,34 @@ input, select, button {
     border: #333 2px solid;
 }
 
+button:hover {
+    background-color: #d5d5d5;
+    transition: .3s;
+}
+
 button:active {
     transform: scale(90%);
+    transition: .1s;
+    background-color: #bdbdbd;
 }
+
+.delete:hover {
+    background-color: #eb4c42;
+}
+
+.delete:active {
+    background-color: #bc3c34;
+}
+
+.clear:hover {
+    background-color: #00cc99;    
+}
+
+.clear:active {
+    background-color: #00a37a;
+}
+
+
 
 .content {
     flex: 1;
@@ -62,19 +92,30 @@ button:active {
 
 .delete {
     flex: 6;
+    background-color: #ef6f67;
 }
 
 .clear {
     flex: 6;
+    background-color: #66e0c1;
 }
 
 .power {
     flex: 4;
     max-width: 92.5px;
 }
+
 .display {
     border: #333 2px solid;
     border-radius: 10px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: 'digital-font';
+    font-size: 4vw;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .exponent {
